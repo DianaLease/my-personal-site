@@ -1,5 +1,5 @@
 ## Diana Lease's Personal Site
-This site is deployed at [dianalease.com](www.dianalease.com).
+This site is deployed at [www.dianalease.com](www.dianalease.com).
 
 ## To Run
 ```
@@ -15,7 +15,7 @@ gatsby develop
 ## To Deploy
 
 ```
-gatsby build
+This site is automatically deployed from the master branch using [Netlify](https://www.netlify.com/).
 ```
 
 ## Built with Gatsby
