@@ -2,7 +2,6 @@ import React from 'react';
 import Section from './Section';
 import styled from 'styled-components';
 import { ArrowRightCircle } from '@styled-icons/feather';
-import bg from '../../static/exp-bg.jpg';
 
 const Spacer = styled.div`
   height: 15px;
@@ -10,9 +9,9 @@ const Spacer = styled.div`
 
 const Experience = () => {
   return (
-    <Section backgroundColor='#FCF6FF' backgroundImg={bg}>
+    <Section outerBackgroundColor1='#C276BF' outerBackgroundColor2='#20A4F3'>
       <h2>Lead Front-End Engineer - Clause</h2>
-      <p>I lead the front-end effort at a legal tech startup building a web app for creating and managing smart legal contracts.</p>
+      <p>Frontend lead, fullstack developer at a legal tech startup building a web app for creating and managing smart legal contracts.</p>
       <p><a target='_blank' rel="noreferrer" href='https://clause.io/'>Check out Clause <ArrowRightCircle size={16}/></a></p>
       <Spacer />
       <h2>Maintainer - Accord Project</h2>

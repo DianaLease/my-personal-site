@@ -3,10 +3,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const SectionOuter = styled.div`
-  scroll-snap-align: start;
   height: 100vh;
   width: 100vw;
-  background: ${props => `url(${props.backgroundImg}) repeat center center fixed`};
+  background-image: ${(props) => (`linear-gradient(${props.backgroundColor1}, ${props.backgroundColor2})`)};
 `;
 
 const SectionInner = styled.div`
@@ -22,10 +21,10 @@ const ChildrenWrapper = styled.div`
   padding: 15%;
 `;
 
-const Section = ({ backgroundColor, backgroundImg, children }) => {
+const Section = ({ outerBackgroundColor1, outerBackgroundColor2, innerBackgroundColor, children }) => {
   return (
-    <SectionOuter backgroundColor={backgroundColor} backgroundImg={backgroundImg}>
-      <SectionInner backgroundColor={backgroundColor}>
+    <SectionOuter backgroundColor1={outerBackgroundColor1} backgroundColor2={outerBackgroundColor2}>
+      <SectionInner backgroundColor={innerBackgroundColor}>
         <ChildrenWrapper>
           {children}
         </ChildrenWrapper>
@@ -35,11 +34,15 @@ const Section = ({ backgroundColor, backgroundImg, children }) => {
 }
 
 Section.defaultProps = {
-  backgroundColor: '#FFF'
+  outerBackgroundColor1: '#FFF',
+  outerBackgroundColor2: '#FFF',
+  innerBackgroundColor: '#FFF'
 };
 
 Section.propTypes = {
-  backgroundColor: PropTypes.string
+  innerBackgroundColor: PropTypes.string,
+  outerBackgroundColor1: PropTypes.string,
+  outerBackgroundColor2: PropTypes.string
 }
 
 
