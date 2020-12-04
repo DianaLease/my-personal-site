@@ -1,5 +1,5 @@
 ## Diana Lease's Personal Site
-This site is deployed at [www.dianalease.com](www.dianalease.com).
+This site is deployed at [https://www.dianalease.com/](https://www.dianalease.com/).
 
 ## To Run
 ```
