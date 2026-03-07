@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+
 import Section from './Section';
 import styled from 'styled-components';
 import { ArrowRightCircle } from '@styled-icons/feather';

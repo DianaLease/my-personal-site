@@ -1,7 +1,7 @@
-import React from 'react';
+'use client';
+
 import styled from 'styled-components';
 import Section from './Section';
-import me from '../../static/me.jpg';
 import { Github, Linkedin, Twitter } from '@styled-icons/feather';
 
 const CircleImage = styled.img`
@@ -25,7 +25,7 @@ const Intro = () => {
       <p><a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/dianalease/'><Linkedin size={24}/></a></p>
       <p><a target='_blank' rel="noreferrer" href='https://twitter.com/DianaDelirious'><Twitter size={24}/></a></p>
       </div>
-      <CircleImage src={me} alt='Diana Lease' />
+      <CircleImage src='/me.jpg' alt='Diana Lease' />
     </Section>
   )
 }
